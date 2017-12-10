@@ -13,7 +13,7 @@ int main()
 
 
     fd = open(myfifo, O_WRONLY);
-    write(fd, "SHTE MINA LI V DVANAYSTI KLAS?", sizeof("SHTE MINA LI V DVANAYSTI KLAS?"));
+    write(fd, "STRING?", sizeof("STRING?"));
     close(fd);
 
 
