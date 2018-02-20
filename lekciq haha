@@ -1,0 +1,24 @@
+generirame nov model s ime Article sled kato sme suzdali sredata /rails g model Article/ 
+Otvarqme modela Article 
+Otvarqme migraciqta i suzdavame pole za timestamps i strings/zaglavie ne statiq/, sushto i content/za samata statiq/ 
+puskame konzola, kydeto se opitvame da pro4etem vsichki statii
+prastha me zaqvka "a article.create" koeto pravi nova zqvka, tova e edin vid article s id 1 
+mojem da mu suzdadem ime, koeto pravi nova zqvka, koqto e update :) 
+"validates_presence_of title- proverqva dali article-la ima Ime, i ako nqma, zaqvkata ne moje da mine uspeshno :/ 
+"validates :content, lenght {minimum: 3}- Validira duljinata na articleto 
+rails g model Picture url:
+validirame url za kartinkata 
+
+ 
+ 
+/Ogranichenieto na URL-tata idva ot dve neshta 1. ogranichenieto ot samiq browser 
+											   2. Ot servera, kojto trqq obrabotva url-a 
+											  
+gogato ima modeli  trqbva da ima kolkoto se moje po-strogo validaciq, zashtoto dobavqnet ona valiteaciq na po-ksuen etap e tegavo 
+kogato ima greshna valitaciq i kartinkata ne vruzva url-a trqbwa da update-nem, za tova validaciqta trqbwa da e na po-ranen etap 
+Ne moje da se trie, realno article-to si ostava hjaha
+
+@articles = article.t 
+
+moje da vidim che imame 2-ri i 4-ti article kato vtoriq nqma title, kogato oshte ne bqhme napravili cheka za title- a 
+
