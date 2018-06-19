@@ -1,0 +1,36 @@
+
+
+app/models/member
+class member <applicationrecord>
+t.string :email
+t.string :member 
+
+
+app/models/member_team.rb
+
+class MemberTeam <Applicationrecord
+
+	t.references :team
+	t.referennces :member
+
+
+posle rake db:migrate
+
+http://guides.rubyonrails.org/active_record_validations.html	
+
+	app/models/member_team.rb
+	validate do 
+	if has_team_with_color?	Team.find(self.team_id).color
+		errors.add(:team, "there is already a team with this color
+		end 
+	end 
+	
+	private
+	def has_team_with_color? color
+	MemberTeam.where(member id: self.member_id).each do |mt
+		if color==Team.find(mt.team_id).color
+		return true
+		end
+	end
+	false
+end 			
